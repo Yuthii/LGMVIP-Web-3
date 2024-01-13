@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="register-form.jpg">
+</head>
+
+<body>
+    <h1>STUDENT ENROLLMENT FORM</h1>
+    <div id="dispp">
+        <form>
+            <div id="registration-form">
+
+                <h2>Registration Form</h2>
+
+                <label for="namee">Name:</label>
+                <input type="text" id="namee">
+                <label for="emaill">Email:</label>
+                <input type="email" id="emaill">
+                <label for="numberr">Contact No:</label>
+                <input type="tel" id="numberr">
+                <label for="genderr">Gender:</label>
+                <select id="genderr">
+                    <option>--Select any--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <label for="skillss" style="margin-bottom: 10px;">Skills:</label>
+                <label for="htmll">HTML</label>
+                <input type="checkbox" style="height: 20px;" id="htmll" name="skillss">
+                <label for="javaa">Java</label>
+                <input type="checkbox" style="height: 20px;" id="javaa" name="skillss">
+                
+                <button type="button" onclick="display()">Submit</button>
+
+
+            </div>
+        </form>
+        <div id="displayform">
+            <h2>Enrolled Students</h2>
+            <div id="tableform">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Gender</th>
+                        <th>Skills</th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function display() {
+            var nameee = document.getElementById("namee").value;
+            var emailll = document.getElementById("emaill").value;
+            var numberrr = document.getElementById("numberr").value;
+            var genderrr = document.getElementById("genderr").value;
+
+            var htmlll = document.getElementById("htmll").checked;
+            var javaaa = document.getElementById("javaa").checked;
+            var tableform = document.getElementById("tableform")
+           /**/
+            var newRow = tableform.querySelector("table").insertRow(-1);
+            var cell0 = newRow.insertCell(0);
+            var cell1 = newRow.insertCell(1);
+            var cell2 = newRow.insertCell(2);
+            var cell3 = newRow.insertCell(3);
+            var cell4 = newRow.insertCell(4);
+            cell0.innerHTML = nameee;
+            cell1.innerHTML = emailll;
+            cell2.innerHTML = numberrr;
+            cell3.innerHTML = genderrr;
+            cell4.innerHTML = (htmlll ? "HTML, " : "") + (javaaa ? "Java" : "");
+        }
+    </script>
+</body>
+
+</html>

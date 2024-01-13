@@ -1,0 +1,209 @@
+@media screen and (max-width:820px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    h1 {
+        text-align: center;
+        background-image: linear-gradient(to bottom right, purple, pink);
+        padding: 20px;
+        color: white;
+        font-family: cursive;
+        margin-bottom: 20px;
+        
+    }
+    
+    body {
+        background-image: linear-gradient(to bottom right, purple, pink);
+        
+    }
+    
+    #dispp {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow items to wrap to the next row */
+        
+    }
+    
+    h2 {
+        margin-bottom: 30px;
+    }
+    
+    #registration-form {
+        background-color: white;
+        display: grid;
+        width: 100%; /* Adjusted width for mobile */
+        margin-left: 10px; /* Added margin for spacing */
+        padding: 20px;
+        font-family: cursive;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    input,
+    select {
+        margin-bottom: 30px;
+        height: 40px;
+        border-radius: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: cursive;
+        padding-left: 10px;
+    }
+    
+    #displayform {
+        background-color: white;
+        margin-top: 20px; /* Added margin for spacing */
+        
+        font-family: cursive;
+        width: 100%; /* Adjusted width for mobile */
+    }
+    
+    table {
+        border-collapse: collapse;
+        font-size: 9px;
+        background-color: purple;
+        color: rgb(255, 255, 255);
+        width: 100%; /* Adjusted width for mobile */
+    }
+    
+    th,
+    td {
+        border: 1px solid rgb(255, 255, 255);
+        padding-right: 10px; /* Adjusted padding for mobile */
+        padding-left: 5px; /* Adjusted padding for mobile */
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    
+    button {
+        background-color: purple;
+        color: white;
+        width: 100%; /* Adjusted width for mobile */
+        height: 50px; /* Adjusted height for mobile */
+        border-radius: 9px;
+        font-family: cursive;
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width:821px) {
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+    
+    }
+    
+    h1 {
+        text-align: center;
+        background-image: linear-gradient(to bottom right ,purple,pink);
+    
+        padding: 20px;
+        color: white;
+        font-family: cursive;
+        margin-bottom: 20px;
+    }
+    
+    body {
+    
+       /* background-color: rgb(219, 218, 218);*/
+       background-image: linear-gradient(to bottom right ,purple,pink);
+    
+       
+    }
+    
+    #dispp {
+        display: flex;
+    
+        justify-content: space-between;
+    
+    }
+    
+    
+    h2 {
+        margin-bottom: 30px;
+    }
+    
+    #registration-form {
+    
+        background-color: white;
+        display: grid;
+        width: 120%;
+        margin-left: 100px;
+        padding: 20px;
+        height: 100%;
+        padding-bottom: 200px;
+        font-family: cursive;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    
+    input,
+    select {
+        margin-bottom: 30px;
+        height: 40px;
+        border-radius: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: cursive;
+        padding-left: 10px;
+    }
+    
+    #displayform {
+        background-color: white;
+        margin-right: 100px;
+        padding: 30px;
+        font-family: cursive;
+        width: 42%;
+    }
+    /**/
+    tr td:not(:last-child) {
+        border-right: 1px solid white;
+    }
+    button{
+        background-color: purple;
+         color: white;
+          width: 20%;
+          height: 150%;
+          border-radius: 9px;
+          font-family: cursive;
+          font-size: 20px;
+          
+    }
+    
+    
+    table {
+    
+        border-collapse: collapse;
+        font-size: 20px;
+        background-color:purple;
+        color: rgb(255, 255, 255);
+    
+    
+    }
+    
+    th {
+        border: 1px solid rgb(255, 255, 255);
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        
+    }
+
+
+    
+
+    
+    
+}
